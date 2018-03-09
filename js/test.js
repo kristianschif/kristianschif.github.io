@@ -1,5 +1,0 @@
-$(document).ready(function() {
-var navbar = "<div class='row'><div class='col-lg-3 col-md-3 col-sm-3 col-xs-1'></div><div class='col-lg-3 col-md-3 col-sm-3 col-xs-5 footerTop footerIcon'><img src='images/kristianSchifLogoWhite.png'></img></div><div class='col-lg-3 col-md-3 col-sm-3 col-xs-5 footerTop'><ul id='footerList'> SOCIAL<li id='footerSocialMedia'><a href='https://www.facebook.com/people/Kristian-Schif/100008221783094' target='_blank' class='footerSocialMediaIcon'><img src='images/iconFacebook.png'></img></a><a href='https://www.instagram.com/schif_happens/' target='_blank' class='footerSocialMediaIcon'><img src='images/iconInstagram.png'></img></a><a href='https://www.linkedin.com/in/kristianschif' target='_blank' class='footerSocialMediaIcon'><img src='images/iconLinkedIn.png'></img></a></li></ul></div><div class='col-lg-3 col-md-3 col-sm-3 col-xs-1'></div></div><div class='row'><div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'><div class='footerBottom'>Site created by Kristian Schif. Last updated 3/5/2018.</div></div></div>";
-
-$("#footer").append(navbar);
-});
