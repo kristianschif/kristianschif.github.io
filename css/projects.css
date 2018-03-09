@@ -1,0 +1,70 @@
+/*Start of projects page CSS*/
+.projectsBackground {
+	background-color:rgba(170,170,180,1);
+}
+#projectsDiv {
+	padding:30px 30px 15px 30px;
+}
+.projectTitle {
+	border-radius:10px;
+	color:rgba(0,0,0,1);	
+	font-family:avenir;
+	font-size:14pt;
+	padding:8px;
+	cursor:pointer;
+}
+.backgroundColor {
+	background-color:rgba(130,130,140,1);
+}
+.projectContent {
+	background-color:rgba(255,255,255,1);
+	border-radius:10px;
+	box-shadow:0px 1px 1px 1px rgba(100,100,100,1);
+	margin:0px 40px 20px 40px;
+}
+#titleDiv{
+	background-color:rgba(255,255,255,1);
+	box-shadow:0px 1px 1px 1px rgba(100,100,100,1);
+	margin:0px 0px 10px 0px;
+	padding:15px;
+}
+.selectedProject {
+	font-weight:bold;
+	background-color:rgba(120,120,130,1);
+}
+.projectTitleFormat {
+	font-family:avenir;
+	font-size:16pt;
+	font-weight:bold;
+	margin:0px;
+	padding:20px;
+}
+.projectSummaryFormat {
+	font-family:avenir;
+	font-size:12pt;
+	margin:0px;
+	padding:15px 20px;	
+}
+.projectSummaryList {
+	font-family:avenir;
+	font-size:12pt;
+	margin-bottom:20px;
+}
+.imageContainer {
+	font-family:avenir;
+	font-size:10pt;
+	padding:0px 15px;
+	text-align:center;
+}
+.image {
+	border-radius:25px;
+	max-width:450px;
+	width:100%;
+}
+#UTCLogo {
+	width:300px;
+}
+.lastImage {
+	padding:0px 15px 10px 15px;
+}
+/*End of projects page CSS*/

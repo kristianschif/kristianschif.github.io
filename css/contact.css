@@ -1,0 +1,54 @@
+/*Start of contact page CSS*/
+#contactDiv {
+	align-items:center;
+	display:grid;
+	height:90%;
+	height:calc(100vh - 80px);
+	background-image:url("../images/contact.jpg");
+	background-position: 55% 70%;
+	background-size:cover;
+	width:100%;
+}
+#contactContent {
+	text-align:center;
+}
+#imageDiv {
+	background-color:rgba(255,255,255,0.85);
+	border-radius:70px;
+	box-shadow:0px 0px 15px 5px rgba(50,50,50,0.85);
+	padding:20px;
+	margin:auto;
+	width:fit-content;
+	transition:all 0.3s;
+}
+#emailHyperlink:hover #imageDiv {
+	background-color:rgba(255,255,255,1);
+	box-shadow:0px 0px 15px 5px rgba(50,50,50,1);
+	transform:scale(1.05);
+}
+#emailAddress {
+	color:rgba(255,255,255,0.85);
+	font-family:avenir;
+	font-size:14pt;
+	text-decoration:none;
+	margin:10px auto 10px auto;
+	transition:all 0.3s;
+	width:fit-content;
+}
+#emailHyperlink:hover #emailAddress {
+	color:rgba(255,255,255,1);
+}
+a:hover {
+	text-decoration:none;
+}
+#emailContent {
+	width:fit-content;
+	margin:auto;
+}
+#resumeStatement {
+	color:rgba(255,255,255,0.85);
+	font-family:avenir;
+	font-size:14pt;
+	margin:0px 50px;
+}
+/*End of contact page CSS*/

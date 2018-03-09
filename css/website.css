@@ -1,0 +1,301 @@
+/*Start of general CSS*/
+#bodyFormat {
+	margin:0px;
+}
+.bold {
+	font-weight:bold;
+}
+.hide {
+	display:none;
+}
+#webpageNavbarDiv {
+	background-color:rgba(255,255,255,1);
+	height:80px;
+	position:relative;
+}
+.smallerText {
+	font-size:12pt;
+}
+/*End of general CSS*/
+
+/*Start of navbar CSS*/
+.nav {
+	font-family:avenir;
+	font-size:14pt;
+	height:60px;
+	position:fixed;
+	transition:background-color 0.5s, height 0.5s;
+	width:100%;
+	z-index:1;
+}
+.navScrollTransition {
+	background-color:rgba(255,255,255,1);
+	box-shadow:0px 1px 8px 0px rgba(0,0,0,1);
+	height:80px;
+	transition:all 0.5s;
+}
+.navWidthTransition {
+	background-color:rgba(255,255,255,1);
+	box-shadow:0px 0px 4px 0px rgba(0,0,0,1);
+	height:80px;
+	transition:all 0.5s;
+}
+/*Allows for left, center, and right navbar sections*/
+#navRelative {
+	height:inherit;
+	position:relative;
+}
+.navLinkColor {
+	color:rgba(0,0,0,1);
+}
+.navLinkColor:hover {
+	color:rgba(0,0,0,1);
+}
+.navLinkColorHome {
+	color:rgba(255,255,255,0.85);
+}
+.navLinkColorHome:hover {
+	color:rgba(255,255,255,1);
+}
+/*Left side of navbar*/
+#navLeft {
+	display:inline-flex;
+	height:inherit;
+	left:0px;
+	position:absolute;
+	z-index:1;
+}
+#navLeft ul {
+	align-items:inherit;
+	display:inherit;
+	height:inherit;
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+#navLeft ul li a {
+	align-items:center;
+	display:flex;
+	font-size:22pt;
+	font-weight:bold;	
+	height:100%;
+	padding:0px 15px;
+	text-decoration:none;
+	transition:background-color 0.3s;
+}
+#navLeftShoppingCart:hover {
+	background-color:rgba(100,100,100,0.3);
+}
+/*Center of navbar*/
+#navCenter {
+	height:inherit;
+	position:absolute;
+	text-align:center;
+	width:100%;
+	z-index:0;
+}
+#navCenter a {
+	align-items:center;
+	display:inline-flex;
+	font-size:22pt;
+	font-weight:bold;
+	height:100%;
+	padding: 0px 15px;
+	text-decoration:none;
+	transition:background-color 0.3s;
+}
+/*Right side of navbar*/
+#navRight {
+	align-items:center;
+	display:inline-flex;
+	height:inherit;
+	position:absolute;
+	right:0px;
+	z-index:1;
+}
+#navRight ul{
+	align-items:inherit;
+	display:inherit;
+	height:inherit;
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+#navRight ul li{
+	height:inherit;
+}
+#navRight ul li a{
+	align-items:center;
+	display:flex;
+	font-weight:bold;
+	padding:0px 15px;
+	text-decoration:none;
+	transition:background-color 0.3s;
+}
+#navRight ul li a:hover{
+	background-color:rgba(100,100,100,0.3);
+}
+.navLinkHeight {
+	height:inherit;
+}
+.navLine {
+	display:flex;
+	height:inherit;
+}
+.navLine div {
+	height:25px;
+	margin:auto 25px;
+}
+.navLineColor {
+	border:solid 1px rgba(0,0,0,1);
+}
+.navLineColorHome {
+	border:solid 1px rgba(255,255,255,0.85);
+}
+.navIcon {
+	height:inherit;
+}
+.navIconFilterHome {
+	filter:invert(100%);
+}
+.navShoppingNotification {
+	width:0px;
+}
+.navShoppingNotification div {
+	background-color:red;
+	border:solid 2px rgba(255,255,255,1);
+	border-radius:100%;
+	height:14px;
+	position:relative;
+	right:9px;
+	top:-8px;
+	width:14px;
+}
+#navToggle {
+	align-items:center;
+	cursor:pointer;
+	display:flex;
+	height:100%;
+	padding:0px 15px;
+}
+#navToggle:hover {
+	background-color:rgba(100,100,100,0.3);
+}
+#navToggleButton div {
+	background-color:rgba(0,0,0,1);
+	height:4px;
+	margin:6px 0px;
+	width:25px;
+}
+#navToggleMenu {
+	background-color:rgba(255,255,255,1);
+	box-shadow:0px 2px 4px 0px rgba(0,0,0,1);
+	height:0px;
+	list-style:none;
+	margin:0px;
+	overflow-y:hidden;
+	padding:0px;
+	transition:height 0.35s;
+	width:100%;
+}
+#navToggleMenu li a {
+	color:rgba(0,0,0,1);	
+	display:flex;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 15px;
+	text-decoration:none;
+	transition:background-color 0.3s;
+}
+#navToggleMenu li a:hover {
+	background-color:rgba(100,100,100,0.3);
+}
+#navToggleState {
+	height:0px;
+	width:0px;
+}
+/*End of navbar CSS*/
+
+/*Start of footer CSS*/
+#footer {
+	background-color:rgba(35,35,35,1);
+	box-shadow:0px 2px 20px 4px rgba(0,0,0,1);
+	padding:0px;
+}
+#footer div {
+	height:inherit;
+	margin:10px 0px;
+}
+#footer div div img{
+	margin:auto;
+}
+#footer div div ul{
+	font-weight:bold;
+	text-align:center;
+	line-height:30px;
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	color:rgba(255,255,255,1);
+}
+#footer div div ul li{
+	font-weight:normal;
+	text-align:left;
+	display:flex;
+}
+#footer div div ul li a{
+	text-decoration:none;
+	color:rgba(255,255,255,0.75);	
+}
+#footer div div ul li a:hover {
+	color:rgba(255,255,255,1);	
+}
+.footerIcon {
+	display:flex;
+}
+#footerIconFormat {
+	filter:invert(100%);
+	height:80px;
+}
+.footerList {
+	width:150px;
+}
+#footerSocialMedia {
+	width:150px;
+	margin:auto;
+}
+.footerSocialMediaIcon {
+	margin:10px auto;
+	filter:invert(100%);
+	opacity:0.75;
+	transition:transform 0.3s;
+}
+.footerSocialMediaIcon:hover {
+	opacity:1;
+	transform:scale(1.2);
+}
+.footerSocialMediaIcon:active {
+	opacity:1;
+	transform:scale(1.2);
+}
+.footerTop {
+	height:200px;
+}
+.footerBottom {
+	color:rgba(255,255,255,1);
+	display:block;
+	text-align:center;
+}
+/*End of footer CSS*/
+
+/*Start of webpage template CSS*/
+#webpageTemplateNavbarDiv {
+	background-color:rgba(250,250,250,1);
+	height:80px;
+	position:relative;
+}
+#webpageTemplateFirst {
+	background-color:rgba(250,250,250,1);
+	height:60vh;
+}
+/*End of webpage template CSS*/

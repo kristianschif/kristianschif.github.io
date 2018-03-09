@@ -1,0 +1,83 @@
+/*Start of home page CSS*/
+.slideShow {
+	background-position:50% 0%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display:flex;
+	height:100vh;
+	padding-top:0px;
+	text-align:center;
+	transition:background 0.75s, padding 0.5s;
+	width:100%;
+}
+#slideShowLeftSide {
+	cursor:pointer;
+	display:inherit;
+	padding:0px 15px;
+	transition:background-color 0.3s;
+}
+#slideShowLeftSide:hover {
+	background-color:rgba(100,100,100,0.15);
+}
+.slideShow div img {
+	align-self:center;
+	cursor:pointer;
+	opacity:0.95;
+}
+#slideShowCenter {
+	display:flex;
+	height:100%;
+	justify-content:center;
+	width:100%;
+}
+#welcomeMessage {
+	background-color:rgba(255,255,255,0.7);
+	border-radius:10px;
+	bottom:30%;
+	font-family:avenir;
+	font-size:22pt;
+	font-weight:bold;
+	overflow-wrap:normal;
+	padding:15px;
+	position:absolute;
+	transition:all 0.3s;
+}
+#welcomeMessage:active {
+	background-color:rgba(255,255,255,1);
+	transform:scale(1.1);
+}
+#welcomeMessage:hover {
+	background-color:rgba(255,255,255,1);
+	transform:scale(1.1);
+}
+.welcomeMessageChange {
+	width:225px;
+}
+#bubbleContainer {
+	bottom:0px;
+	position:absolute;
+}
+.slideShowBubble {
+	border:solid 2px rgba(255,255,255,0.9);
+	border-radius:8px;
+	cursor:pointer;
+	display:flex;
+	float:left;
+	height:16px;
+	margin:10px 3px;
+	transition:background-color 0.25s;
+	width:16px;
+}
+#slideShowBubble0 {
+	background-color:rgba(255,255,255,0.9);
+}
+#slideShowRightSide {
+	cursor:pointer;
+	display:inherit;
+	padding:0px 15px;
+	transition:background-color 0.3s;
+}
+#slideShowRightSide:hover {
+	background-color:rgba(100,100,100,0.15);
+}
+/*End of home page CSS*/

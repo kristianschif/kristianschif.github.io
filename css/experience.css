@@ -1,0 +1,103 @@
+/*Start of experience page CSS*/
+.experienceTitle {
+	color:rgba(255,255,255,1);
+	font-family:avenir;
+	font-weight:bold;
+	font-size:22pt;
+	text-align:center;
+	background-color:rgba(35,35,35,1);
+	padding:15px 0px;
+}
+.experienceContentLeft {
+	float:left;
+}
+.experienceContentRight {
+	float:right;
+}
+#imageExperience0 {
+	background-image:url("../images/experience0.jpg");
+	background-position:50% 0%;
+	background-size:cover;
+	min-height:inherit;
+}
+#contentExperience0 {
+	align-content:center;
+	background-color:rgba(11,44,96,1);
+	display:grid;
+	min-height:inherit;
+}
+#imageExperience1 {
+	background-image:url("../images/experience1.jpg");
+	background-position:50% 40%;
+	background-size:cover;
+	min-height:inherit;
+}
+#contentExperience1 {
+	align-content:center;
+	background-color:rgba(140,145,150,1);
+	display:grid;
+	min-height:inherit;
+}
+#imageExperience2 {
+	background-image:url("../images/experience2.jpg");
+	background-position:50% 0%;
+	background-size:cover;
+	min-height:inherit;
+}
+#contentExperience2 {
+	align-content:center;
+	background-color:rgba(255,190,120,1);
+	display:grid;
+	min-height:inherit;
+}
+#imageExperience3 {
+	background-image:url("../images/experience3.jpg");
+	background-position:40% 50%;
+	background-size:cover;
+	min-height:inherit;
+}
+#contentExperience3 {
+	align-content:center;
+	background-color:rgba(140,150,200,1);
+	display:grid;
+	min-height:inherit;
+}
+#imageExperience4 {
+	background-image:url("../images/experience4.jpg");
+	background-position:60% 50%;
+	background-size:cover;
+	min-height:inherit;
+}
+#contentExperience4 {
+	align-content:center;
+	background-color:rgba(175,125,190,1);
+	display:grid;
+	min-height:inherit;
+}
+#imageExperience5 {
+	background-image:url("../images/experience5.jpg");
+	background-position:100% 50%;
+	background-size:cover;
+	min-height:inherit;
+}
+#contentExperience5 {
+	align-content:center;
+	background-color:rgba(105,185,100,1);
+	display:grid;
+	min-height:inherit;
+}
+.textBox {
+	background-color:rgba(255,255,255,1);
+	border-radius:30px;
+	font-family:avenir;
+	font-size:12pt;
+	margin:15px 0px;
+	padding:30px;
+}
+.rowHeight {
+	min-height:420px;
+}
+.centerText {
+	text-align:center;
+}
+/*End of experience page CSS*/

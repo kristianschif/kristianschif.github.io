@@ -4,149 +4,199 @@
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>Kristian Schif</title>
-	<link rel="icon" href="Pictures/Logo_Black.png">
-
-	<!-- Latest compiled and minified CSS -->
+	<link rel="icon" href="images/kristianSchifLogo.png">
+	<link rel="stylesheet" href="css/website.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/experience.css">
 	
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	<link rel="stylesheet" href="SiteCSS.css">
-	<script src="js/TabEffects.js"></script>
-	<script src="js/navbar-color.js"></script>
+	<script src="js/jQuery.js"></script>
+	<script src="js/navbarInitialize.js"></script>
+	<script src="js/navbarWidthChanges.js"></script>
+	<script src="js/navbarToggleMenu.js"></script>
 </head>
-<body id="nav"> 
-	<!-- navigation bar section -->
-	<nav class="navbar navbar-default navbar-fixed-top affix-top navbar-at-start">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<img id="logo" class="navbar-brand" src="Pictures/Logo_White.png">
-				<a class="navbar-brand n1" href="index.html">KRISTIAN SCHIF</a>
+<body id="bodyFormat">
+<!-- navbar content -->
+	<nav class="nav navWidthTransition">
+		<div id="navRelative">
+			<div id="navLeft">
+				<ul>
+					<li class="nav3 hide"><a id="navLeftShoppingCart" class="navIcon" href="https://www.linkedin.com/in/kristianschif" target="_blank"><img src="images/iconLinkedIn.png"></img></a></li>
+					<li class="nav1 nav2 hide"><a class="navLinkColor" href="index.html" target="_self">Kristian Schif</a></li>
+				</ul>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="selectedtab"><a href="index.html" class="n2">HOME</a></li>
-					<li><a href="About.html" class="n2">ABOUT</a></li>
-					<li><a href="Experience.html" class="n2">EXPERIENCE</a></li>
-					<li><a href="Projects.html" class="n2">PROJECTS</a></li>
-					<li><a href="Contact.html" class="n2">CONTACT</a></li>
+			<div id="navCenter" class="nav3 hide">
+				<a class="navLinkColor" href="index.html" target="_self">Kristian Schif</a>
+			</div>
+			<div id="navRight">
+				<ul>
+					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="index.html" target="_self">Home</a></li>
+					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="about.html" target="_self">About</a></li>
+					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="experience.html" target="_self">Experience</a></li>
+					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="projects.html" target="_self">Projects</a></li>
+					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="contact.html" target="_self">Contact</a></li>
+					<li class="nav1 hide"><div class="navLine"><div class="navLineColor"></div></div></li>
+					<li class="nav1 nav2 hide"><a class="navIcon" href="https://www.linkedin.com/in/kristianschif" target="_blank"><img class="navIconFilter" src="images/iconLinkedIn.png"></img></a></li>
+					<li class="nav2 hide"><div class="navLine"><div class="navLineColor"></div></div></li>
+					<li class="nav2 nav3 hide"><div id="navToggle"><div id="navToggleButton"><div></div><div></div><div></div></div></div></li>
 				</ul>
 			</div>
 		</div>
+		<ul id="navToggleMenu" class="hide">
+			<li id="navToggleMenuItem"><a href="index.html" target="_self">Home</a></li>
+			<li><a href="about.html" target="_self">About</a></li>
+			<li><a href="experience.html" target="_self">Experience</a></li>
+			<li><a href="projects.html" target="_self">Projects</a></li>
+			<li><a href="contact.html" target="_self">Contact</a></li>
+		</ul>
+		<div id="navToggleState"></div>
 	</nav>
-	<!-- experience section -->
-	<div id="top-box-experience" class="container-fluid"></div>
-	<div id="University-of-Connecticut-title" class="container-fluid">University of Connecticut</div>
+<!-- webpage content -->
+<!-- div to bypass navbar -->
+	<div id="webpageNavbarDiv"></div>
+<!-- experience first section -->
 	<div class="container-fluid">
-		<div id="row1-experience" class="row">
-			<div id="University-of-Connecticut-picture" class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
-			<div id="experience-info-container" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				<div id="experience-info-table">
-					<div id="experience-info-table-cell">
-						<p class="University-of-Connecticut-info"><span class="bold">Major:</span> Management and Engineering for Manufacturing (MEM)</p>
-						<p class="University-of-Connecticut-info"><span class="bold">Minor:</span> Analytics</p>
-						<p class="University-of-Connecticut-info"><span class="bold">Graduation:</span> May 2018</p>
-						<p class="University-of-Connecticut-info"><span class="bold">Degree:</span> Bachelor of Science for MEM in the School of Business and Engineering</p>
-						<p class="University-of-Connecticut-info left-align"><span class="bold">Positions:</span>
-							<li class="left-align">Honors Student</li>
-							<li class="left-align">Teacher's Assistant (UNIV1784, MEM2211, MEM2212)</li>
-							<li class="left-align">MEM Laboratory Manager</li>
-						</p>
-					</div>
+		<div class="row experienceTitle">University of Connecticut</div>
+		<div class="row rowHeight">
+			<div id="imageExperience0" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 experienceContentLeft"></div>
+			<div id="contentExperience0" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 experienceContentLeft">
+				<div class="textBox">
+					<p><span class="bold">Major:</span> Management and Engineering for Manufacturing</p>
+					<p><span class="bold">Minor:</span> Analytics</p>
+					<p><span class="bold">Graduation:</span> May 2018</p>
+					<p><span class="bold">Degree:</span> Bachelor of Science for MEM in the School of Business and Engineering</p>
+					<p><span class="bold">Accomplishments:</span></p>
+					<ul>
+						<li>First in MEM Class (Fall 2014-Present)</li>
+						<li>Dean's List School of Business (Fall 2014-Present)</li>
+						<li>Dean's List School of Engineering (Fall 2014-Present)</li>
+						<li>Honors Program</li>
+						<li>Sophomore Honors</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row experienceTitle">Sikorsky Aircraft Corporation</div>
+		<div class="row rowHeight">
+			<div id="imageExperience1" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 experienceContentRight"></div>
+			<div id="contentExperience1" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 experienceContentRight">
+				<div class="textBox">
+					<p><span class="bold">Industry:</span> Aerospace</p>
+					<p><span class="bold">Corporation:</span> Sikorsky Aircraft Corporation (Lockheed Martin)</p>
+					<p><span class="bold">Headquarters:</span> 6900 Main St, Stratford, CT 06614</p>
+					<p><span class="bold">Internships:</span></p>
+					<ul>
+						<li>May 2016 - Aug 2016</li>
+						<li>Dec 2016 - Jan 2017</li>
+						<li>May 2017 - Aug 2017</li>
+						<li>Jan 2018</li>
+					</ul>
+					<p><span class="bold">Positions:</span></p>
+					<ul>
+						<li>Achieving Competitive Excellence (ACE) Intern</li>
+						<li>Quality Engineer Intern for Blades Product Center</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row experienceTitle">Managment and Engineering for Manufacturing</div>
+		<div class="row rowHeight">
+			<div id="imageExperience2" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 experienceContentLeft"></div>
+			<div id="contentExperience2" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 experienceContentLeft">
+				<div class="textBox">
+					<p><span class="bold">Laboratory Manager</span> - (Aug 2017 - Present)</p>
+					<ul>
+						<li>Responsible for overseeing and managing the MEM CAD and 3D Printing laboratory.</li>
+						<li>Maintain, troubleshoot, and repair all equipment within the lab.</li>
+						<li>Implement visual systems and controls to improve laboratory efficiency.</li>
+					</ul>
+					<p><span class="bold">MEM2212 Teacher's Assistant</span> - (Aug 2016 - Present)</p>
+					<ul>
+						<li>Led classroom lectures on numerous topics including additive manufacturing, computer-aided design, and engineering drawings.</li>
+						<li>Provide after hour assistance for students in the Introduction to Manufacturing Class Lab MEM2212.</li>
+					</ul>
+					<p><span class="bold">MEM2211 Teacher's Assistant</span> - (Jan 2016 - May 2016)</p>
+					<ul>
+						<li>Led study sessions and provide after hour assistance for students in the Introduction to Manufacturing Class MEM2211.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row experienceTitle">Lean Manufacturing and Six Sigma</div>
+		<div class="row rowHeight">
+			<div id="imageExperience3" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 experienceContentRight"></div>
+			<div id="contentExperience3" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 experienceContentRight">
+				<div class="textBox">
+					<p><span class="bold">Certification:</span> Lean Six Sigma Green Belt</p>
+					<p><span class="bold">Issued By:</span> Lockheed Martin</p>
+					<p><span class="bold">Date Issued:</span> July 31, 2017</p>
+					<p><span class="bold">Purpose:</span> Recognize my expertise and accomplishments with Lean Manufacturing and Six Sigma at Sikorsky Aircraft Corporation.</p>
+					<p><span class="bold">Requirements:</span></p>
+					<ul>
+						<li>Active participation in the initiation, execution, and completion of two (2) lean/six sigma accredited events.</li>
+						<li>Sixteen (16) hours of classroom training.</li>
+						<li>Completion of all required online learning modules.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row experienceTitle">Alpha Kappa Lambda</div>
+		<div class="row rowHeight">
+			<div id="imageExperience4" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 experienceContentLeft"></div>
+			<div id="contentExperience4" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 experienceContentLeft">
+				<div class="textBox">
+					<p><span class="bold">Organization:</span> Alpha Kappa Lambda</p>
+					<p><span class="bold">Values:</span> Leadership, Scholarship, Loyalty, Self-Support, Judeo-Christian Principles</p>
+					<p><span class="bold">Philanthropy:</span> These Hands Don't Hurt</p>
+					<p><span class="bold">Members:</span> 102 Active Members</p>
+					<p><span class="bold">Positions:</span></p>
+					<ul>
+						<li>President</li>
+						<li>Community Service Chairman</li>
+						<li>Philanthropy Chairman</li>
+						<li>Counselor</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row experienceTitle">Skills and Proficiencies</div>
+		<div class="row rowHeight">
+			<div id="imageExperience5" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 experienceContentRight"></div>
+			<div id="contentExperience5" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 experienceContentRight">
+				<div class="textBox">
+					<p class="centerText"><span class="bold">Interpersonal Skills</span></p>
+					<p>Leadership, Communication, Project Management, Team Building, Time Management, Active Listener, Conflict Resolution, Public Speaking</p>
+					<p class="centerText"><span class="bold">Computer Skills</span></p>
+					<p><span class="bold">Proficient:</span> Microsoft Office (Excel, Word, PPT, Outlook, Access), Micosoft Project, SharePoint, HTML, CSS, Javascript, JQuery, SQL, SSRS, Visual Basic</p>
+					<p><span class="bold">Intermediate:</span> Arduino, CAD SolidWorks, Command Media, Makerbot, Ruby on Rails, SAS JMP, Solumina</p>
+					<p><span class="bold">Familiar:</span> CAD Catia, G-Code, Git, MATLAB, Minitab, Simul8, Tableau, XCode</p>
+					<p class="centerText"><span class="bold">Additional Proficiencies</span></p>
+					<p>Computer-Aided Design, 3D Printing, Carpentry, Arc Welding, Two-Stroke and Four-Stroke Engines for Household Applications</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="Sikorsky-Aircraft-Corporation-title" class="container-fluid">Sikorsky Aircraft Corporation</div>
-	<div class="container-fluid">
-		<div id="row2-experience" class="row">
-			<div id="Sikorsky-Aircraft-Corporation-picture" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 float-right"></div>
-			<div id="experience-info-container2" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 float-right">
-				<div id="experience-info-table">
-					<div id="experience-info-table-cell">
-						<p class="University-of-Connecticut-info"><span class="bold">Industry:</span> Aerospace </p>
-						<p class="University-of-Connecticut-info"><span class="bold">Corporation:</span> Sikorsky Aircraft - A Lockheed Martin Company</p>
-						<p class="University-of-Connecticut-info"><span class="bold">Headquarters:</span> 6900 Main St, Stratford, CT 06614</p>
-						<p class="University-of-Connecticut-info left-align"><span class="bold">Internships:</span>
-							<li class="left-align">May 2016 - August 2016</li>
-							<li class="left-align">December 2016 - January 2017</li>
-							<li class="left-align">May 2017 - August 2017</li>
-						</p>
-						<p class="University-of-Connecticut-info left-align"><span class="bold">Positions:</span>
-							<li class="left-align">Achieving Competitive Excellence (ACE)</li>
-							<li class="left-align">Quality Engineer for Blades Product Center</li>
-						</p>
-					</div>
-				</div>
+<!-- footer content -->
+	<div id="footer" class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-1"></div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 footerTop footerIcon"><img id="footerIconFormat" src="images/kristianSchifLogo.gif"></img></div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 footerTop">
+				<ul id="footerList"> SOCIAL
+					<li id="footerSocialMedia">
+						<a href="https://www.facebook.com/people/Kristian-Schif/100008221783094" target="_blank" class="footerSocialMediaIcon"><img src="images/iconFacebook.png"></img></a>
+						<a href="https://www.instagram.com/schif_happens/" target="_blank" class="footerSocialMediaIcon"><img src="images/iconInstagram.png"></img></a>
+						<a href="https://www.linkedin.com/in/kristianschif" target="_blank" class="footerSocialMediaIcon"><img src="images/iconLinkedIn.png"></img></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-1"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="footerBottom">Site created by Kristian Schif.</div>
 			</div>
 		</div>
 	</div>
-	<div id="Alpha-Kappa-Lambda-title" class="container-fluid">Alpha Kappa Lambda</div>
-	<div class="container-fluid">
-		<div id="row3-experience" class="row">
-			<div id="Alpha-Kappa-Lambda-picture" class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
-			<div id="experience-info-container3" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				<div id="experience-info-table">
-					<div id="experience-info-table-cell">
-						<p class="University-of-Connecticut-info"><span class="bold">Organization:</span> Social Fraternity </p>
-						<p class="University-of-Connecticut-info"><span class="bold">Motto:</span> Alethia Kia Logos - "The Truth and the Word"</p>
-						<p class="University-of-Connecticut-info"><span class="bold">Philanthropy:</span> These Hands Don't Hurt</p>
-						<p class="University-of-Connecticut-info"><span class="bold">Members:</span> 102 Active Members</p>
-						<p class="University-of-Connecticut-info left-align"><span class="bold">Positions:</span>
-							<li class="left-align">President</li>
-							<li class="left-align">Philanthropy Chair</li>
-							<li class="left-align">Community Service Chair</li>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="Skills-title" class="container-fluid">Skills and Proficiencies</div>
-	<div class="container-fluid">
-		<div id="row4-experience" class="row">
-			<div id="Skills-picture" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 float-right"></div>
-			<div id="experience-info-container4" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 float-right">
-				<div id="experience-info-table">
-					<div id="experience-info-table-cell">
-						<p class="bold"> Interpersonal Skills </p>
-						<p class="University-of-Connecticut-info">Communication, Leadership, Project Management, Team Building, Time Management</p>
-						<p class="bold"> Computer Skills </p>
-						<p class="University-of-Connecticut-info"><span class="bold">Proficient:</span> Microsoft Office (Excel, Word, PPT, Outlook, Access), Microsoft Project, Visual Basic, SQL, HTML, HTML5, CSS, SSRS, SharePoint</p>
-						<p class="University-of-Connecticut-info"><span class="bold">Intermediate:</span> SAS JMP, Minitab, CAD Solidworks, Makerbot, Solumina</p>
-						<p class="University-of-Connecticut-info"><span class="bold">Familiar:</span> MATLAB, CAD CATIA, JavaScript</p>
-						<p class="bold"> Additional Proficiencies </p>
-						<p class="University-of-Connecticut-info"> Computer-Aided Design, 3D Printing, Carpentry, Arc Welding, Two-Stroke and Four-Stroke Engines for Household Applications</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- footer section -->
-	<div class="footer-bottom">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-12 page-footer" > Site created by Kristian Schif</div>
-			</div>
-		</div>
-	</div>
-	<!-- JQuery file-->
-	<script src="js/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </body>
 </html>
