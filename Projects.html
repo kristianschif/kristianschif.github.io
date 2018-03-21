@@ -10,53 +10,25 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/projects.css">
 	
+	<!-- original jQuery Javascript file -->
 	<script src="js/jQuery.js"></script>
+	<!-- Javascript to setup navbar and footer -->
+	<script src="js/setupNavbar.js"></script>
+	<script src="js/setupFooter.js"></script>
+	<!-- Javascript for navbar functionality -->
 	<script src="js/navbarInitialize.js"></script>
 	<script src="js/navbarWidthChanges.js"></script>
 	<script src="js/navbarToggleMenu.js"></script>
-	<script src="js/scrollChangesAbout.js"></script>
+	<!-- Javascript for project selection scroll -->
 	<script src="js/projectSelection.js"></script>
 </head>
 <body id="bodyFormat" class="projectsBackground">
-<!-- navbar content -->
-	<nav class="nav navWidthTransition">
-		<div id="navRelative">
-			<div id="navLeft">
-				<ul>
-					<li class="nav3 hide"><a id="navLeftShoppingCart" class="navIcon" href="https://www.linkedin.com/in/kristianschif" target="_blank"><img src="images/iconLinkedIn.png"></img></a></li>
-					<li class="nav1 nav2 hide"><a class="navLinkColor" href="index.html" target="_self">Kristian Schif</a></li>
-				</ul>
-			</div>
-			<div id="navCenter" class="nav3 hide">
-				<a class="navLinkColor" href="index.html" target="_self">Kristian Schif</a>
-			</div>
-			<div id="navRight">
-				<ul>
-					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="index.html" target="_self">Home</a></li>
-					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="About.html" target="_self">About</a></li>
-					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="Experience.html" target="_self">Experience</a></li>
-					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="Projects.html" target="_self">Projects</a></li>
-					<li class="nav1 hide"><a class="navLinkHeight navLinkColor" href="Contact.html" target="_self">Contact</a></li>
-					<li class="nav1 hide"><div class="navLine"><div class="navLineColor"></div></div></li>
-					<li class="nav1 nav2 hide"><a class="navIcon" href="https://www.linkedin.com/in/kristianschif" target="_blank"><img class="navIconFilter" src="images/iconLinkedIn.png"></img></a></li>
-					<li class="nav2 hide"><div class="navLine"><div class="navLineColor"></div></div></li>
-					<li class="nav2 nav3 hide"><div id="navToggle"><div id="navToggleButton"><div></div><div></div><div></div></div></div></li>
-				</ul>
-			</div>
-		</div>
-		<ul id="navToggleMenu" class="hide">
-			<li id="navToggleMenuItem"><a href="index.html" target="_self">Home</a></li>
-			<li><a href="About.html" target="_self">About</a></li>
-			<li><a href="Experience.html" target="_self">Experience</a></li>
-			<li><a href="Projects.html" target="_self">Projects</a></li>
-			<li><a href="Contact.html" target="_self">Contact</a></li>
-		</ul>
-		<div id="navToggleState"></div>
-	</nav>
-<!-- webpage content -->
-<!-- div to bypass navbar -->
+	<!-- navbar content -->
+	<nav id="navbar" class="nav navWidthTransition"></nav>
+	<!-- webpage content -->
+	<!-- div to bypass navbar -->
 	<div id="webpageNavbarDiv"></div>
-<!-- project list section -->
+	<!-- project list section -->
 	<div id="projectsDiv">
 		<div id="titleDiv" class="projectTitle"><span class="bold">Projects</span> - <span class="smallerText">Click on the projects to learn more.</span></div>
 		<div id="projectTitle0" class="projectTitle">This Website</div>
@@ -71,7 +43,7 @@
 		<div id="projectTitle9" class="projectTitle">Reverse Engineering of RC Racecar</div>
 		<div id="projectTitle10" class="projectTitle">3D Printing Independent Research</div>
 	</div>
-<!-- project content section -->
+	<!-- project content section -->
 	<div id="project0" class="projectContent hide">
 		<p class="projectTitleFormat">This Website</p>
 		<p class="projectSummaryFormat">This has been one of the most intense projects I have ever worked on. The inspiration to put together a personal website arose from my summer 2017 internship with Sikorsky Aircraft Corporation. One of my tasks (discussed in the Sikorsky Aircraft Corporation section) was to design and implement a SharePoint site for the Blades Product Center. This required that I become familiar with several different programming languages that I had never worked with before; including HTML, CSS, JavaScript, and jQuery. I decided to put my new knowledge to the test and design a website that could showcase my work, interests, and skills I have acquired over the years.</p>
@@ -194,27 +166,7 @@
 			<div class="imageContainer"><img class="image" src="images/project10Image2.jpg"></img><p class="caption">First Print on the Afinibot 3D Printer</p></div>
 		<p class="projectSummaryFormat">The printer is currently located in the MEM Laboratory in the Engineering II Building for students to use.</p>
 	</div>
-<!-- footer content -->
-	<div id="footer" class="container-fluid">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-1"></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 footerTop footerIcon"><img id="footerIconFormat" src="images/kristianSchifLogo.gif"></img></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 footerTop">
-				<ul id="footerList"> SOCIAL
-					<li id="footerSocialMedia">
-						<a href="https://www.facebook.com/people/Kristian-Schif/100008221783094" target="_blank" class="footerSocialMediaIcon"><img src="images/iconFacebook.png"></img></a>
-						<a href="https://www.instagram.com/schif_happens/" target="_blank" class="footerSocialMediaIcon"><img src="images/iconInstagram.png"></img></a>
-						<a href="https://www.linkedin.com/in/kristianschif" target="_blank" class="footerSocialMediaIcon"><img src="images/iconLinkedIn.png"></img></a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-1"></div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="footerBottom">Site created by Kristian Schif.</div>
-			</div>
-		</div>
-	</div>
+	<!-- footer content -->
+	<div id="footer" class="container-fluid"></div>
 </body>
 </html>
