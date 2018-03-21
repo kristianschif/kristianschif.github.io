@@ -15,7 +15,7 @@ $(document).ready(function() {
 		$(selectedProject).removeClass("hide");
 		
 		/* Scrolls down to selected project */
-		$('html, body').animate({scrollTop: $(selectedProject).offset().top - 100}, 350);
+		$('html, body').animate({scrollTop: $(selectedProject).offset().top - 90}, 350);
 	});
 });
 
