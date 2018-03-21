@@ -25,14 +25,21 @@
 #aboutMeGhostDiv {
 	height:80px;
 }
-#aboutMeTitle {
+.aboutMeDiv {
 	background-color:rgba(35,35,35,1);
 	color:rgba(255,255,255,1);
 	font-family:avenir;
-	font-size:30pt;
 	font-weight:bold;
-	padding:10px;
+	padding:0px 10px;
 	text-align:center;
+}
+#aboutMeTitleFont {
+	font-size:30pt;
+	padding-top:10px;
+}
+#clickToLearnMoreFont {
+	font-size:13pt;
+	padding-bottom:10px;
 }
 #aboutMeBackground{
 	background-color:rgba(35,35,35,1);
@@ -71,13 +78,13 @@
 .thumbnailTextContainer {
 	border-radius:10px;
 	margin:auto;
-	padding:0px;
+	padding:0px 5px;
 	transition:all 0.5s;
 }
 .thumbnailText:hover .thumbnailTextContainer{
 	background-color:rgba(255,255,255,0.7);
 	color:rgba(0,0,0,1);
-	padding:10px;
+	padding:15px 5px;
 }
 #thumbnail0 {
 	background-image:url("../images/thumbnail0.jpg");
