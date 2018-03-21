@@ -158,6 +158,9 @@
 .iconSize {
 	height:35px;
 }
+#dummy {
+	
+}
 .navIconFilterHome {
 	filter:invert(100%);
 }
