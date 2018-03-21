@@ -155,6 +155,9 @@
 .navIcon {
 	height:inherit;
 }
+.iconSize {
+	height:35px;
+}
 .navIconFilterHome {
 	filter:invert(100%);
 }
