@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kristian Schif</title>
+	<link rel="icon" href="images/kristianSchifLogo.png">
+	<link rel="stylesheet" href="css/website.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/home.css">
+	<!-- original jQuery Javascript file -->
+	<script src="js/jQuery.js"></script>
+	<!-- Javascript to setup navbar and footer -->
+	<script src="js/setupNavbar.js"></script>
+	<script src="js/setupFooter.js"></script>
+	<!-- Javascript for navbar functionality -->
+	<script src="js/navbarInitialize.js"></script>
+	<script src="js/navbarWidthChanges.js"></script>
+	<script src="js/navbarToggleMenu.js"></script>
+	<!-- Javascript to initialize home -->
+	<script src="js/initializeHome.js"></script>
+	<!-- Javascript to change home upon viewport adjustments -->
+	<script src="js/widthChangesHome.js"></script>
+	<!-- Javascript for slide show functionality -->
+	<script src="js/slideShowHome.js"></script>
+</head>
+<body id="bodyFormat">
+	<!-- navbar content -->
+	<nav id="navbar" class="nav navWidthTransition"></nav>
+	<!-- webpage content -->
+	<!-- slideshow content -->
+	<div class="slideShow">
+		<div id="slideShowLeftSide"><img src="images/arrowPrevious.png"/></div>
+		<div id="slideShowCenter">
+			<div id="welcomeMessage" class="hide" onclick="">Welcome to My Website!</div>
+			<div id="bubbleContainer">
+				<div id="slideShowBubble0" class="slideShowBubble"></div><div id="slideShowBubble1" class="slideShowBubble"></div><div id="slideShowBubble2" class="slideShowBubble"></div><div id="slideShowBubble3" class="slideShowBubble"></div><div id="slideShowBubble4" class="slideShowBubble"></div>
+			</div>
+		</div>
+		<div id="slideShowRightSide"><img src="images/arrowNext.png"/></div>
+	</div>
+	<!-- footer content -->
+	<div id="footer" class="container-fluid"></div>
+</body>
+</html>
