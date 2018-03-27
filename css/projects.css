@@ -58,9 +58,13 @@
 	text-align:center;
 }
 .image {
-	border-radius:25px;
+	border-radius:20px;
 	max-width:450px;
 	width:100%;
+}
+.imageBorder {
+	border:solid 2px rgba(0,0,0,1);
+	border-radius:10px;
 }
 #UTCLogo {
 	width:300px;
@@ -79,5 +83,9 @@
 	margin:0px auto 20px auto;
 	padding:10px;
 	width:fit-content;
+}
+.bullet {
+	font-size:10pt;
+	vertical-align:middle;
 }
 /*End of projects page CSS*/

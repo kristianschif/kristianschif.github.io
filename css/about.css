@@ -102,8 +102,8 @@
 	transition:transform 0.3s;
 }
 #thumbnail3 {
-	background-image:url("../images/thumbnail3.jpg");
-	background-position:50% 10%;
+	background-image:url("../images/thumbnail3.png");
+	background-position:50% 50%;
 	transition:transform 0.3s;
 }
 #thumbnail4 {
